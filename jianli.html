@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        /* Material Design 风格与紧凑布局 */
+        @media print {
+            body {
+                width: 210mm;
+                height: 297mm;
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            color: #333;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            background-color: #3f51b5;
+            color: #fff;
+            border-radius: 8px 8px 0 0;
+            padding: 15px;
+        }
+
+        .header h1 {
+            font-size: 22px;
+            margin: 5px 0;
+        }
+
+        .header p {
+            font-size: 13px;
+            color: #c5cae9;
+            margin: 3px 0;
+        }
+
+        .section-title {
+            font-size: 14px;
+            color: #3f51b5;
+            margin-bottom: 5px;
+            padding-bottom: 3px;
+            border-bottom: 2px solid #3f51b5;
+        }
+
+        .content-item h3 {
+            font-size: 13px;
+            margin: 0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .content-item p {
+            font-size: 12px;
+            color: #666;
+            margin: 4px 0;
+        }
+
+        .skills {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .skills span {
+            background-color: #e8eaf6;
+            color: #3f51b5;
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="card header" style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="text-align: left;">
+                <h1>张浩钏</h1>
+                <p>机器人工程专业 | 邮箱: 2857211723@qq.com | 电话: +86 18535910253</p>
+            </div>
+            <div>
+                <img src="qrcode.png" alt="二维码" style="width: 80px; height: 80px;">
+            </div>
+        </div>
+        <!-- Summary Section -->
+        <div class="card">
+            <div class="section-title">个人简介</div>
+            <p>机器人工程专业学生，丰富的桌面端开发经验，擅长软件开发、网络安全与UI设计。精通C#、Python、VB、C++等，熟悉跨平台框架（如Uno Platform、Avalonia、.NET
+                MAUI、WinUI）以及Git、Markdown，掌握Windows Native和.NET逆向。</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="card">
+            <div class="section-title">个人技能</div>
+            <div class="skills">
+                <span>软件开发</span>
+                <span>网络安全</span>
+                <span>UI设计</span>
+                <span>C#</span>
+                <span>.NET</span>
+                <span>Python</span>
+                <span>跨平台框架</span>
+                <span>WinForms</span>
+                <span>WPF</span>
+                <span>React</span>
+                <span>Uno Platform</span>
+                <span>Avalonia</span>
+                <span>.NET MAUI</span>
+                <span>WinUI</span>
+                <span>Material Design</span>
+                <span>HTML & CSS</span>
+                <span>JavaScript</span>
+                <span>Git</span>
+                <span>Markdown</span>
+                <span>逆向工程</span>
+                <span>系统加固</span>
+                <span>自动化脚本</span>
+                <span>RPA开发</span>
+                <span>Windows Native开发</span>
+                <span>网络协议分析</span>
+            </div>
+        </div>
+
+
+        <!-- Experience Section -->
+        <div class="card">
+            <div class="section-title">工作经验</div>
+
+            <div class="content-item">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>长春安山猿 | 安全开发工程师</h3>
+                    <p style="margin: 0;">2023年9月 - 2024年6月</p>
+                </div>
+                <ul>
+                    <li><strong>开发内部工具</strong>，简化日常流程，提高团队效率30%。</li>
+                    <li><strong>主导产品架构设计</strong>，确保系统的模块化和可扩展性。</li>
+                    <li>执行渗透测试，修复高危漏洞，显著提升系统安全。</li>
+                </ul>
+            </div>
+
+            <div class="content-item" style="border-top: 1px solid #ddd; padding-top: 10px; margin-top: 10px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>南京亚信科技 | PAAS运维</h3>
+                    <p style="margin: 0;">2024年7月 - 至今</p>
+                </div>
+                <ul>
+                    <li>负责<strong>中国电信</strong>的PAAS日常运维工作。</li>
+                    <li>负责<strong>AI后端工作流</strong>的运维，提升运行效率。</li>
+                    <li>负责<strong>开发RPA机器人</strong>开发，自动化日常任务，减少手动操作。</li>
+                    <li>编写<strong>自动化</strong>脚本，实现配置和数据备份管理分析。</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <!-- Education Section -->
+        <div class="card">
+            <div class="section-title">教育背景</div>
+            <div class="content-item" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h3>山西能源学院</h3>
+                    <p><strong>专业：</strong>机器人工程（本科）</p>
+                </div>
+                <div style="text-align: right;">
+                    <p>2021年9月 - 2025年7月</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section-title">开源项目</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <!-- CrossPEView 项目 -->
+                <div
+                    style="border: 1px solid #ddd; padding: 10px; border-radius: 6px; background-color: #fff; position: relative; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h3 style="margin: 0; color: #3f51b5;">CrossPEView</h3>
+                        <p style="margin: 5px 0;">跨平台的PE文件查看器，使用MAUI开发。</p>
+                        <p style="margin: 0; font-size: 12px; color: #555;">C# • Updated 2 days ago</p>
+                    </div>
+                    <img src="PE.png" alt="二维码" style="width: 60px; height: 60px;">
+                </div>
+
+                <!-- WeChat-Dump-Auto 项目 -->
+                <div
+                    style="border: 1px solid #ddd; padding: 10px; border-radius: 6px; background-color: #fff; position: relative; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h3 style="margin: 0; color: #3f51b5;">WeChat-Dump-Auto</h3>
+                        <p style="margin: 5px 0;">微信取证-完全自动化的信息查找，密钥抓取，打压缩上传。</p>
+                        <p style="margin: 0; font-size: 12px; color: #555;">C# • 54 stars • Updated last month</p>
+                    </div>
+                    <img src="WX.png" alt="二维码" style="width: 60px; height: 60px;">
+                </div>
+                <!-- Patch_All-in-one 项目 -->
+                <div
+                    style="border: 1px solid #ddd; padding: 10px; border-radius: 6px; background-color: #fff; position: relative; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h3 style="margin: 0; color: #3f51b5;">Patch_All-in-one</h3>
+                        <p style="margin: 5px 0;">多功能补丁管理工具，支持批量应用补丁。</p>
+                        <p style="margin: 0; font-size: 12px; color: #555;">C# • Updated recently</p>
+                    </div>
+                    <img src="path.png" alt="二维码" style="width: 60px; height: 60px;">
+                </div>
+                <!-- shellcode2exe 项目 -->
+                <div
+                    style="border: 1px solid #ddd; padding: 10px; border-radius: 6px; background-color: #fff; position: relative; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h3 style="margin: 0; color: #3f51b5;">shellcode2exe</h3>
+                        <p style="margin: 5px 0;">将shellcode转换为exe，支持64位和32位。</p>
+                        <p style="margin: 0; font-size: 12px; color: #555;">C# • Updated on Sep 19</p>
+                    </div>
+                    <img src="shell.png" alt="二维码" style="width: 60px; height: 60px;">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
